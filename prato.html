@@ -1,4 +1,92 @@
 <script src="jsonpratos.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title> Venha conhecer melhor nossos pratos </title>
+	</head>
+
+	<body>
+		<h1> Informações adicionais </h1>
+
+		<table>
+			<tr>
+				<td> nome </td>
+				<td> <input type="text" id="nome" disabled="true"></td>
+			</tr>
+
+			<tr>
+				<td> preco </td>
+				<td> <input type="text" id="preco" disabled="true"></td>
+			</tr>
+
+			<tr>
+				<td> acompanhamento </td>
+				<td> <input type="text" id="acompanhamento" disabled="true"></td>
+			</tr>
+
+			<tr>
+				<td> descricao </td>
+				<td> <input type="text" id="descricao" disabled="true"></td>
+			</tr>
+
+			<tr>
+				<td> imagen </td>
+				<td> <img id="imagem" width="400px"></img></td>
+			</tr>
+
+		</table>
+
+<h1 id="soEsse" class="center"> Cardápio </h1>
+    <table class="center" id="tb-cardapio">
+      <tr>
+        <th> Sanduiche de Filé Mignon ao Molho   </th>
+        <th> Sanduiches de frango e peixe </th>
+        <th> Acompanhamentos </th>
+        <th> Bebidas </th>
+        <th> Sobremesas </th>
+        <th> Saladas </th>
+      </tr>
+
+      <tr>
+        <td><a href="prato.html?id=cheeseburger_Carne">Cheeseburguer<a></td>
+        <td><a href="prato.html?id=cheeseburger_Frango">Sanduiche Chicken<a></td>
+        <td> Fritas </td>
+        <td> Refrigerantes </td>
+        <td>Flurry</td>
+        <td>Salada de Atum</td>
+      </tr>
+
+      <tr>
+        <td>Hamburguer Cheddar</td>
+        <td>Sanduiche Fish</td>
+        <td>MOLHOS PARA CHICKEN </td>
+        <td> Dell Valle</td>
+        <td> Danoninho </td>
+        <td> Salada Caesar</td>
+      </tr>
+
+      <tr>
+        <td> Hamburguer Egg Bacon</td>
+        <td> Escandalosamente Delicioso </td>
+        <td> Nuggets </td>
+        <td> Agua Mineral </td>
+        <td> Top Sundae </td>
+        <td> POTATO SALAD</td>
+      </tr>
+
+     <tr>
+       <td>Hamburguer Bacon Honey Mustard</td>
+       <td>CHICKEN SUPREME</td>
+       <td> Tomatinho</td>
+       <td>Real Fruits</td>
+       <td> Torta de  maça</td>
+       <td> Saladas com grãos</td>
+     </tr>
+    </table>
+
+</html>
 
 <script>
   function getParameterByName(name, url) {
@@ -11,14 +99,14 @@
       return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
 
+  function carregamenu(mix) {
+  		document.getElementById("nome").value = mix.nome;
+      document.getElementById("preco").value = mix.preco;
+      document.getElementById("acompanhamento").value = mix.acompanhamento;
+      document.getElementById("descricao").value = mix.descricao;
+      document.getElementById("imagem").src = mix.imagem;
+  }
+
   var id = getParameterByName('id');
-
-  prato = pratos[id]
-  var nome = prato.nome
-  var descricao = prato.descricao
+  carregamenu(pratos[id]);
 </script>
-
-<html>
-  <body>
-  </body>
-</html>
