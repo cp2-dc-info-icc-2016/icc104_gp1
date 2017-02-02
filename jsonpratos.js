@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 pratos = {
+=======
+   pratos = {
+>>>>>>> origin/master
   "cheeseburger_Carne": {
     "nome": "Cheeseburger de Carne",
     "preco": 7.99,
@@ -39,6 +43,7 @@ pratos = {
 
   "salada_De_Atum": {
     "nome": "Salada de Atum",
+<<<<<<< HEAD
     "preco": 5.50,
     "acompanhamento":"Molhos variados = rosê, ketchup, mostarda e maionese.",
     "descricao":"Folhas frescas e tomates suculentos, com atum selecionado",
@@ -49,6 +54,18 @@ pratos = {
      "preco": 14.50,
      "acompanhamento":"Ketchup, Mostarda e Maionese",
      "descricao":"Pão '9 Grãos' com Gergelim, acompanhado de picanha e queijo cheddar derretido que explode na sua boca... tipo o big bang, morô?",
+=======
+    "preco": 5.00,
+    "acompanhamento":"",
+    "descricao":"Folhas frescas e tomates suculentos, com atum selecionado",
+    "imagem":"atum.jpg"
+  },
+   " big_Explosao_cheddar": {
+     "nome":"Hamburguer Cheddar",
+     "preco": 15.00,
+     "acompanhamento":"",
+     "descricao":"Pão 9 grão com gergelim, acompanhado de picanha e uma explosão de cheddar, tipo o big bang, morô?",
+>>>>>>> origin/master
      "imagem":"cheddar.jpg"
    },
 
@@ -85,18 +102,30 @@ pratos = {
 
      "hamburguer_Egg_Bacon":{
        "nome": "Hamburguer Egg Bacon",
+<<<<<<< HEAD
        "preco":9.60,
+=======
+       "preco":"9.60",
+>>>>>>> origin/master
        "acompanhamento":"",
        "descricao":"Dois hambúrgueres da melhor carne 100% bovina acompanhados por queijo cheddar em fatias, cebola roxa, bacon em tiras, picles, mostarda, ketchup no pão Angus",
        "imagem":"angus-bacon.jpg"
      },
 
      "scandalosamente_Delicioso":{
+<<<<<<< HEAD
        "nome":"Escandalosamente Delicioso",
        "preco":8.00,
        "acompanhamento":"",
        "descricao":"Delicioso hamburguer de frango, bacon, cebola crispy, alface , saboroso molho, em um pão quadrado com gergelim e bacon.",
        "imagem":"cbo.jpg"
+=======
+       "nome":"scandalosamente Delicioso",
+       "preco":8.00,
+       "acompanhamento":"",
+       "descricao":"Delicioso hamburguer de frango, bacon, cebola crispy, alface , saboroso molho, em um pão quadrado com gergelim e bacon.",
+       "imagem":"cob.jpg"
+>>>>>>> origin/master
      },
 
      "nuggets":{
@@ -107,7 +136,11 @@ pratos = {
        "imagem":"Brie-Nuggets-Russia.jpg"
      },
 
+<<<<<<< HEAD
      "agua_Mineral":{
+=======
+     "agua_Mineral ":{
+>>>>>>> origin/master
        "nome":"Agua Mineral ",
        "preco":3.50,
        "acompanhamento":"",
@@ -133,8 +166,13 @@ pratos = {
      "hamburguer_Bacon_Honey_Mustard":{
        "nome":"Hamburguer Bacon Honey Mustard",
        "preco":35.90,
+<<<<<<< HEAD
        "acompanhamento":"Deliciosas fritas, Bacon em tiras e Honey Mustard",
        "descricao":"Bem ao estilo de Louisiana, com um toque do delicioso mel, que dão a esse hambúrguer de 200g um sabor único. Servido com alface, tomate, queijo, maionese. ",
+=======
+       "acompanhamento":"Deliciosas fritas",
+       "descricao":"Bem ao estilo de Louisiana, com um toque do delicioso mel cebolas grelhadas, que dão a esse hambúrguer de 200g um sabor único. Servido com alface, tomate, queijo, maionese e bacon.",
+>>>>>>> origin/master
        "imagem":"FullSizeRender.jpg"
      },
      "chicken_Supreme":{
@@ -165,7 +203,11 @@ pratos = {
      "descricao":"Muito queijo, mas muito queijo mesmo! Perfeito para começar o dia. Quem já provou costuma dizer de boca cheia: 'Mnfmn nmfm gmlump nmhm mhmmhb'. Traduzindo: 'Não adianta pedir um pedaço que eu não dou de jeito nenhum' ",
      "imagem":"pao-de-queijo.jpg"
    },
+<<<<<<< HEAD
    "saladas_Com_Graos":{
+=======
+   "saladas_Com_Grãos":{
+>>>>>>> origin/master
      "nome":"Saladas com grãos",
      "preco":23.50,
      "acompanhamento":"COM FRUTAS, CASTANHAS E FOLHAS",
