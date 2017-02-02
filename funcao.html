@@ -1,0 +1,75 @@
+<script>
+function carregamenu(mix) {
+document.getElementById("nome").value = mix.nome;
+    document.getElementById("preco").value = mix.preco;
+    document.getElementById("acompanhamento").value = mix.acompanhamento;
+    document.getElementById("descricao").value = mix.descricao;
+    document.getElementById("imagem").value = mix.imagem;
+}
+</script>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title> Venha conhecer melhor nossos pratos </title>
+</head>
+
+<body>
+<h1> Informações adicionais </h1>
+
+<table>
+<tr>
+<td> Nome </td>
+<td> <input type="text" id="nome" value="" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Preço </td>
+<td> <input type="text" id="preco" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Acompanhamento </td>
+<td> <input type="text" id="acompanhamento" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Descrição </td>
+<td> <input type="text" id="descricao" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Imagem </td>
+<td> <input type="text" id="imagem" disabled="true"></td>
+</tr>
+
+</table>
+
+<div>
+<br>
+<input type="button"  value="Cheeseburger carne" onclick="carregamenu(cheeseburger_Carne);"> <br><br>
+<input type="button"  value="Cheeseburger frango" onclick="carregamenu(cheeseburger_Frango);"> <br> <br>
+<input type="button"  value="Fritas" onclick="carregamenu(fritas);"> <br><br>
+<input type="button"  value="Refrigerantes" onclick="carregamenu(refrigerantes);"> <br><br>
+<input type="button"  value="Flurry" onclick="carregamenu(flurry);"> <br><br>
+<input type="button"  value="salada de atum" onclick="carregamenu(salada_De_Atum);"> <br><br>
+<input type="button"  value="Big explosao cheddar" onclick="carregamenu(big _Explosao_Cheddar);"> <br><br>
+<input type="button"  value="Sanduich Fish" onclick="carregamenu(sanduich_Fish);"> <br><br>
+<input type="button" value="Dell Valle" onclick="carregamenu(dell_Valle);"> <br><br>
+<input type="button" value="Danoninho" onclick="carregamenu(danoninho);"> <br><br>
+<input type="button" value="salada Caesar" onclick="carregamenu(salada_Caesar);"> <br><br>
+<input type="button" value="Hamburguer Egg Bacon" onclick="carregamenu(hamburguer_Egg_Bacon);"> <br><br>
+<input type="button" value="Scandalosamente Delicioso" onclick="carregamenu(scandalosamente_Delicioso);"> <br><br>
+<input type="button" value="Nuggets" onclick="carregamenu(nuggets);"> <br><br>
+<input type="button" value="Agua Mineral" onclick="carregamenu(agua_Mineral);"> <br><br>
+<input type="button" value="Top Sundae" onclick="carregamenu(top_Sundae);"> <br><br>
+<input type="button" value="Potato Salad" onclick="carregamenu(potato_Salad);"> <br><br>
+<input type="button" value="Hamburguer Bacon Honey Mustard" onclick="carregamenu(hamburguer_Bacon_Honey_Mustard);"> <br><br>
+<input type="button"  value="Chicken Supreme" onclick="carregamenu(chicken_Supreme);"> <br><br>
+<input type="button"  value="Tomatinho" onclick="carregamenu(tomatinho);"> <br><br>
+<input type="button"  value="Chocolate Quente" onclick="carregamenu(chocolate_Quente);"> <br><br>
+<input type="button"  value="Pão de Queijo" onclick="carregamenu(pao_De_Queijo);"> <br><br>
+<input type="button"  value="saladas com grãos'" onclick="carregamenu(saladas_Com_Grãos);"> <br><br>
+</div>
+
+</html>

@@ -1,4 +1,91 @@
 <script src="jsonpratos.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+
+<head>
+<meta charset="utf-8">
+<title> Venha Conhecer Nossos Pratos! </title>
+</head>
+
+<body>
+<h1> Informações Adicionais </h1>
+
+<table>
+<tr>
+<td> Nome </td>
+<td> <input type="text" id="nome" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Preço </td>
+<td> <input type="text" id="preco" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Acompanhamento </td>
+<td> <input type="text" id="acompanhamento" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Descrição </td>
+<td> <input type="text" id="descricao" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Imagem </td>
+<td> <img id="imagem" width="400px"></img></td>
+</tr>
+
+</table>
+
+<h1 id="soEsse" class="center"> Cardápio </h1>
+<table class="center" id="tb-cardapio">
+  <tr>
+    <th> Sanduiche de Filé Mignon ao Molho   </th>
+    <th> Sanduiches de frango e peixe </th>
+    <th> Acompanhamentos </th>
+    <th> Bebidas </th>
+    <th> Sobremesas </th>
+    <th> Saladas </th>
+  </tr>
+
+  <tr>
+    <td><a href="prato.html?id=cheeseburger_Carne">Cheeseburger de Carne<a></td>
+    <td><a href="prato.html?id=cheeseburger_Frango">Cheeseburger de Frango<a></td>
+    <td><a href="prato.html?id=fritas"> Fritas </td>
+    <td><a href="prato.html?id=refrigerantes"> Refrigerantes </td>
+    <td><a href="prato.html?id=flurry">Flurry</td>
+    <td><a href="prato.html?id=salada_De_Atum">Salada de Atum</td>
+  </tr>
+
+  <tr>
+    <td><a href="prato.html?id=big_Explosao_cheddar"> Hamburguer "Big Explosão Cheddar"</td>
+    <td><a href="prato.html?id=sanduich_Fish"> Sanduiche "Fish"</td>
+    <td> ------------- </td>
+    <td><a href="prato.html?id=dell_Valle"> Dell Valle</td>
+    <td> <a href="prato.html?id=danoninho"> Danoninho </td>
+    <td> <a href="prato.html?id=salada_Caesar"> Salada Caesar</td>
+  </tr>
+
+  <tr>
+    <td><a href="prato.html?id=hamburguer_Egg_Bacon"> Hamburguer Egg Bacon</td>
+    <td> <a href="prato.html?id=scandalosamente_Delicioso"> 'Escandalosamente Delicioso' </td>
+    <td> <a href="prato.html?id=nuggets"> Nuggets </td>
+    <td> <a href="prato.html?id=agua_Mineral">Água Mineral </td>
+    <td> <a href="prato.html?id=top_Sundae"> Top Sundae </td>
+    <td> <a href="prato.html?id=potato_Salad"> POTATO SALAD</td>
+  </tr>
+
+ <tr>
+   <td><a href="prato.html?id=hamburguer_Bacon_Honey_Mustard">Hamburguer Bacon c/ Honey Mustard</td>
+   <td><a href="prato.html?id=chicken_Supreme">CHICKEN SUPREME</td>
+   <td> <a href="prato.html?id=tomatinho">Tomatinho</td>
+   <td> <a href="prato.html?id=chocolate_Quente"> Chocolate Quente</td>
+   <td> <a href="prato.html?id=pao_De_Queijo"> Pão de Queijo</td>
+   <td> <a href="prato.html?id=saladas_Com_Graos"> Saladas com grãos</td>
+ </tr>
+</table>
+</html>
 
 <script>
   function getParameterByName(name, url) {
@@ -11,14 +98,14 @@
       return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
 
+  function carregamenu(mix) {
+  document.getElementById("nome").value = mix.nome;
+      document.getElementById("preco").value = mix.preco;
+      document.getElementById("acompanhamento").value = mix.acompanhamento;
+      document.getElementById("descricao").value = mix.descricao;
+      document.getElementById("imagem").src = mix.imagem;
+  }
+
   var id = getParameterByName('id');
-
-  prato = pratos[id]
-  var nome = prato.nome
-  var descricao = prato.descricao
+  carregamenu(pratos[id]);
 </script>
-
-<html>
-  <body>
-  </body>
-</html>

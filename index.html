@@ -1,180 +1,159 @@
 <!DOCTYPE HTML>
-<style>
-#tb-cardapio  {
-    border: 1px solid black;
-		border-collapse: collapse;
-		margin: auto;
-}
 
-#tb-cardapio td, th {
-	border: 1px solid black;
-	padding: 10px;
-}
-body{
-  background-color:orange;
-}
-	.center {
-		text-align: center;
-
-	}
-	 #soEsse {
-		 background:#FF0000;
-	 }
-
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 <script>
 shoppingNovaAmerica = {
-	"Bairro": "Dell Castilho",
-	"cep": "20771-610",
-	"cidade": "Rio de Janeiro",
-	"Loja": "E02",
+"Bairro": "Dell Castilho",
+"cep": "20771-610",
+"cidade": "Rio de Janeiro",
+"Loja": "E02",
   "Localização":"Expansão 1º piso",
   "telefone": "2303-3456",
-	"imagem": "novaAmerica.jpg"
+"imagem": "novaAmerica.jpg"
 }
 
 shoppingTijuca = {
-	"Bairro": "Tijuca",
-	"cep": "20770-610",
-	"cidade": "Rio de Janeiro",
-	"Loja": "E02",
-	"Localização": "28 -Piso Expansão",
-	"telefone": "(021) 2567 0686 ",
-	"imagem": "tijuca.jpg"
+"Bairro": "Tijuca",
+"cep": "20770-610",
+"cidade": "Rio de Janeiro",
+"Loja": "E02",
+"Localização": "28 -Piso Expansão",
+"telefone": "(021) 2567 0686 ",
+"imagem": "tijuca.jpg"
 }
 
  shoppingBangu = {
-	  "Bairro": "Bangu",
-		"cep": "20778564",
-		"cidade": "Rio de Janeiro",
-		"Loja":"I02",
-		"Localização":" 29 - Piso Expansão",
-		"telefone": "(021) 2127 0686 ",
-		"imagem": "Bangu.jpg"
+ "Bairro": "Bangu",
+"cep": "20778564",
+"cidade": "Rio de Janeiro",
+"Loja":"I02",
+"Localização":" 29 - Piso Expansão",
+"telefone": "(021) 2127 0686 ",
+"imagem": "Bangu.jpg"
  }
 
    caxiasShopping = {
-	  "Bairro": "caxias",
-		"cep": "21852-456",
-		"cidade":"Rio de Janeiro",
-		"Loja":"F03",
-		"Localização":"Rod. Washington Luíz, 2895 ",
-		"telefone":" (021) 24056336",
-		"imagem":"caxias.jpg"
+ "Bairro": "caxias",
+"cep": "21852-456",
+"cidade":"Rio de Janeiro",
+"Loja":"F03",
+"Localização":"Rod. Washington Luíz, 2895 ",
+"telefone":" (021) 24056336",
+"imagem":"caxias.jpg"
  }
 
 function carregaLoja(mix) {
-		document.getElementById("Bairro").value = mix.Bairro;
+document.getElementById("Bairro").value = mix.Bairro;
     document.getElementById("cep").value = mix.cep;
     document.getElementById("cidade").value = mix.cidade;
     document.getElementById("Loja").value = mix.Loja;
     document.getElementById("Localização").value = mix.Localização;
     document.getElementById("telefone").value = mix.telefone;
-		document.getElementById("imagemShopping").src = mix.imagem;
+document.getElementById("imagemShopping").src = mix.imagem;
 }
 
 </script>
 
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<title> Endereço </title>
-	</head>
+<head>
+<meta charset="utf-8">
+<title> Endereço </title>
+</head>
 
-	<body>
-		<h1> Endereço de nossas Lojas </h1>
+<body>
+<h1> Endereço de nossas Lojas </h1>
 
-		<img id="imagemShopping" src="" height="420" width="420">
-		<table>
-			<tr>
-				<td> Bairro</td>
-				<td> <input type="text" id="Bairro" value="Dell Castilho" disabled="true"></td>
-			</tr>
+<img id="imagemShopping" src="" height="420" width="420">
+<table>
+<tr>
+<td> Bairro</td>
+<td> <input type="text" id="Bairro" value="Dell Castilho" disabled="true"></td>
+</tr>
 
-			<tr>
-				<td> cep </td>
-				<td> <input type="text" id="cep" disabled="true"></td>
-			</tr>
+<tr>
+<td> cep </td>
+<td> <input type="text" id="cep" disabled="true"></td>
+</tr>
 
-			<tr>
-				<td> cidade </td>
-				<td> <input type="text" id="cidade" disabled="true"></td>
-			</tr>
+<tr>
+<td> cidade </td>
+<td> <input type="text" id="cidade" disabled="true"></td>
+</tr>
 
-			<tr>
-				<td> Loja </td>
-				<td> <input type="text" id="Loja" disabled="true"></td>
-			</tr>
+<tr>
+<td> Loja </td>
+<td> <input type="text" id="Loja" disabled="true"></td>
+</tr>
 
-			<tr>
-				<td> Localização </td>
-				<td> <input type="text" id="Localização" disabled="true"></td>
-			</tr>
+<tr>
+<td> Localização </td>
+<td> <input type="text" id="Localização" disabled="true"></td>
+</tr>
 
-			<tr>
-				<td> telefone </td>
-				<td> <input type="text" id="telefone" disabled="true"></td>
-			</tr>
-		</table>
+<tr>
+<td> telefone </td>
+<td> <input type="text" id="telefone" disabled="true"></td>
+</tr>
+</table>
 
-		<div>
-			<br>
-			<input type="button"  value="Shopping Nova América" onclick="carregaLoja(shoppingNovaAmerica);"> <br><br>
-			<input type="button"  value="Shopping Tijuca" onclick="carregaLoja(shoppingTijuca);"> <br> <br>
-			<input type="button"  value="Shopping Bangu" onclick="carregaLoja(shoppingBangu);"> <br><br>
-			<input type="button"  value="Caxias Shopping" onclick="carregaLoja(caxiasShopping);"> <br><br>
+<div>
+<br>
+<input type="button"  value="Shopping Nova América" onclick="carregaLoja(shoppingNovaAmerica);"> <br><br>
+<input type="button"  value="Shopping Tijuca" onclick="carregaLoja(shoppingTijuca);"> <br> <br>
+<input type="button"  value="Shopping Bangu" onclick="carregaLoja(shoppingBangu);"> <br><br>
+<input type="button"  value="Caxias Shopping" onclick="carregaLoja(caxiasShopping);"> <br><br>
 
-		</div>
+</div>
 
 
-			<h1 id="soEsse" class="center"> Cardápio </h1>
+<h1 id="soEsse" class="center"> Cardápio </h1>
 
-		<table class="center" id="tb-cardapio">
-			<tr>
-				<th> Sanduiche de Filé Mignon ao Molho   </th>
-				<th> Sanduiches de frango e peixe </th>
-				<th> Acompanhamentos </th>
-				<th> Bebidas </th>
-				<th> Sobremesas </th>
-				<th> Saladas </th>
-			</tr>
+<table class="center" id="tb-cardapio">
+<tr>
+<th> Sanduiche de Filé Mignon ao Molho   </th>
+<th> Sanduiches de frango e peixe </th>
+<th> Acompanhamentos </th>
+<th> Bebidas </th>
+<th> Sobremesas </th>
+<th> Saladas </th>
+</tr>
 
-			<tr>
-				<td><a href="prato.html?id=cheeseburger_carne">Cheeseburguer<a></td>
-				<td>Sanduiche Chicken</td>
-				<td> Fritas </td>
-				<td> Refrigerantes </td>
-				<td>Flurry</td>
-				<td>Salada de Atum</td>
-			</tr>
+<tr>
+<td><a href="prato.html?id=cheeseburger_Carne"> Cheeseburguer<a></td>
+<td><a href="prato.html?id=cheeseburger_Frango"> Sanduiche Chicken<a></td>
+<td><a href="prato.html?id=fritas"> Fritas </td>
+<td><a href="prato.html?id=refrigerantes"> Refrigerantes </td>
+<td><a href="prato.html?id=flurry">Flurry</td>
+<td><a href="prato.html?id=salada_De_Atum">Salada de Atum</td>
+</tr>
 
-			<tr>
-				<td>Hamburguer Cheddar</td>
-				<td>Sanduiche Fish</td>
-				<td>MOLHOS PARA CHICKEN </td>
-				<td> Dell Valle</td>
-				<td> Danoninho </td>
-				<td> Salada Caesar</td>
-			</tr>
+<tr>
+<td><a href="prato.html?id=big_Explosao_cheddar"> Hamburguer Cheddar</td>
+<td><a href="prato.html?id=sanduich_Fish"> Sanduiche Fish</td>
+<td> MOLHOS PARA CHICKEN </td>
+<td><a href="prato.html?id=dell_Valle"> Dell Valle</td>
+<td> <a href="prato.html?id=danoninho"> Danoninho </td>
+<td> <a href="prato.html?id=salada_Caesar"> Salada Caesar</td>
+</tr>
 
-			<tr>
-				<td> Hamburguer Egg Bacon</td>
-				<td> Escandalosamente Delicioso </td>
-				<td> Nuggets </td>
-				<td> Agua Mineral </td>
-				<td> Top Sundae </td>
-				<td> POTATO SALAD</td>
-			</tr>
+<tr>
+<td><a href="prato.html?id=hamburguer_Egg_Bacon"> Hamburguer Egg Bacon</td>
+<td> <a href="prato.html?id=scandolasamente_Delicioso"> 'Escandalosamente Delicioso' </td>
+<td> <a href="prato.html?id=nuggets"> Nuggets </td>
+<td> <a href="prato.html?id=agua_Mineral">Água Mineral </td>
+<td> <a href="prato.html?id=top_Sundae"> Top Sundae </td>
+<td> <a href="prato.html?id=potato_Salad"> POTATO SALAD</td>
+</tr>
 
-		 <tr>
-			 <td>Hamburguer Bacon Honey Mustard</td>
-			 <td>CHICKEN SUPREME</td>
-			 <td> Tomatinho</td>
-			 <td>Real Fruits</td>
-			 <td> Torta de  maça</td>
-			 <td> Saladas com grãos</td>
-		 </tr>
-	</table>
-	</body>
+<tr>
+<td><a href="prato.html?id=hamburguer_Bacon_Honey_Mustard">Hamburguer Bacon Honey Mustard</td>
+<td><a href="prato.html?id=chicken_Supreme">CHICKEN SUPREME</td>
+<td> <a href="prato.html?id=tomatinho">Tomatinho</td>
+<td> <a href="prato.html?id=chocolate_Quente"> Chocolate Quente</td>
+<td> <a href="prato.html?id=pao_De_Queijo"> Pão de Queijo</td>
+<td> <a href="prato.html?id=saladas_Com_Graos"> Saladas com grãos</td>
+</tr>
+</table>
+</body>
 </html>
