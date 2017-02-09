@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+body{
+  background-color: orange;
+=======
+<<<<<<< HEAD
 <style>
 =======
 >>>>>>> origin/master
@@ -6,19 +10,22 @@
     border: 1px solid black;
 		border-collapse: collapse;
 		margin: auto;
+>>>>>>> origin/master
 }
 
-#tb-cardapio td, th {
-	border: 1px solid black;
-	padding: 10px;
+h1{
+  color: red;
 }
 
-body{
-  background-color:orange;
+h3{
+  color: red
 }
-	.center {
-		text-align: center;
 
+<<<<<<< HEAD
+label {
+  vertical-align: top;
+}
+=======
 	}
 	 #soEsse {
 		 background:#FF0000;
@@ -27,4 +34,5 @@ body{
 
 </style>
 =======
+>>>>>>> origin/master
 >>>>>>> origin/master

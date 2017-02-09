@@ -1,0 +1,74 @@
+
+<script>
+  deixeSuaMensagem={
+    "Nome":"",
+    "Empresa":"",
+    "E-mail":"",
+    "Telefone":"",
+    "Mensagem":""
+}
+
+function carregadados(dados) {
+document.getElementById("nome").value = mix.Bairro;
+    document.getElementById("empresa").value = mix.cep;
+    document.getElementById("e-mail").value = mix.cidade;
+    document.getElementById("telefone").value = mix.Loja;
+    document.getElementById("Mensagem").value = mix.Loja;
+  }
+
+function funcao1()
+{
+  alert ("Mensagem enviada com sucesso!");
+}
+
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Cadastro </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF -8">
+</head>
+
+<body>
+
+  <h3> Deixe sua mensagem </h3>
+<div>
+  <table>
+    <tr>
+      <td> <label> Nome </label> </td>
+      <td> <input type="text" id="Nome" value="" abled="true"></td>
+    </tr>
+
+    <tr>
+      <td> <label> Empresa </label> </td>
+      <td> <input type="text" id="Empresa" value="" abled="true"></td>
+    </tr>
+
+    <tr>
+      <td> <label> E-mail </label> </td>
+      <td> <input type="text" id="Email" value="" abled="true"></td>
+    </tr>
+
+    <tr>
+      <td> <label> Telefone </label> </td>
+      <td> <input type="text" id="Telefone" value=""abled="true"></td>
+    </tr>
+
+    <tr>
+      <td> <label> Mensagem </label> </td>
+      <td>
+        <textarea rows="10" cols="50" id="Mensagem" abled="true">
+        </textarea>
+      </td>
+    </tr>
+
+  </table>
+</div>
+
+
+
+  <input type="button" onclick="funcao1()" value="Enviar" /> <br><br>
+</body>
+</html>

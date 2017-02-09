@@ -1,0 +1,21 @@
+table{ position:absolute;
+	background-color:#ff4444;
+      left:160px;
+	height:100px;
+	text-align: center;
+	font-size: 26px;
+	border-collapse: collapse;
+	}
+
+td{  width: 250px;
+  }
+.i{ width: 0px;
+   background-color:black;
+  color:#dd0000;
+
+}
+img{ height:150px;
+}
+.tr2{ background-color:black;
+     color:#dd0000;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<style>
+body{
+  background-color: orange;
+}
+
+#alinhar {
+  text-align: center;
+}
+
+h1{
+  color: red;
+}
+
+</style>
+<script>
+shoppingNovaAmerica = {
+"Bairro": "Dell Castilho",
+"cep": "20771-610",
+"cidade": "Rio de Janeiro",
+"Loja": "F01",
+ "Localização":"Av. Pastor Martin Luther King Junior, 126 - Del Castilho,1º piso",
+ "telefone": "2303-3456",
+"imagem": "novaAmerica.jpg"
+}
+
+shoppingTijuca = {
+"Bairro": "Tijuca",
+"cep": "20770-610",
+"cidade": "Rio de Janeiro",
+"Loja": "F06",
+"Localização": "v. Maracanã, 987 - Tijuca, Rio de Janeiro - RJ,1º Piso",
+"telefone": "(021) 2567 0686 ",
+"imagem": "tijuca.jpg"
+}
+
+shoppingBangu = {
+"Bairro": "Bangu",
+"cep": "20778564",
+"cidade": "Rio de Janeiro",
+"Loja":"I02",
+"Localização":"Rua Fonseca, 240 - Bangu, Rio de Janeiro - RJ 2º Piso",
+"telefone": "(021) 2127 0686 ",
+"imagem": "Bangu.jpg"
+}
+
+  caxiasShopping = {
+"Bairro": "caxias",
+"cep": "21852-456",
+"cidade":"Rio de Janeiro",
+"Loja":"F05",
+"Localização":"Rod. Washington Luíz, 2895 - Parque Duque, RJ 2º Piso",
+"telefone":" (021) 24056336",
+"imagem":"caxias.jpg"
+}
+
+  botafogoPraiaShopping= {
+"Bairro": "Botafogo",
+"cep": "22250-040",
+"cidade":"Rio de Janeiro",
+"Loja":"F02",
+"Localização":" Praia de Botafogo, 400 - Botafogo, Rio de Janeiro - RJ, 3º Piso",
+"telefone":"(21) 3171-9872",
+"imagem":"bota.jpg"
+}
+
+westShopping= {
+"Bairro": "Campo Grande",
+"cep": "23087-283",
+"cidade":"Rio de Janeiro",
+"Loja":"F03",
+"Localização":" Estr. do Mendanha, 555 - Campo Grande, Rio de Janeiro - RJ, 1º Piso",
+"telefone":"(21) 3178-9501",
+"imagem":"west.jpg"
+}
+
+
+
+function carregaLoja(mix) {
+document.getElementById("Bairro").value = mix.Bairro;
+   document.getElementById("cep").value = mix.cep;
+   document.getElementById("cidade").value = mix.cidade;
+   document.getElementById("Loja").value = mix.Loja;
+   document.getElementById("Localização").value = mix.Localização;
+   document.getElementById("telefone").value = mix.telefone;
+document.getElementById("imagemShopping").src = mix.imagem;
+}
+
+</script>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title> Endereço </title>
+  <link rel="stylesheet"  type="text/css" href="style.css"/>
+</head>
+
+<body>
+<h1 id="alinhar"> Endereço de nossas Lojas </h1>
+
+<img id="imagemShopping" src="" height="420" width="420">
+<table>
+<tr>
+<td> Bairro</td>
+<td> <input type="text" id="Bairro" value="Dell Castilho" disabled="true"></td>
+</tr>
+
+<tr>
+<td> cep </td>
+<td> <input type="text" id="cep" disabled="true"></td>
+</tr>
+
+<tr>
+<td> cidade </td>
+<td> <input type="text" id="cidade" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Loja </td>
+<td> <input type="text" id="Loja" disabled="true"></td>
+</tr>
+
+<tr>
+<td> Localização </td>
+<td> <input type="text" id="Localização" disabled="true"></td>
+</tr>
+
+<tr>
+<td> telefone </td>
+<td> <input type="text" id="telefone" disabled="true"></td>
+</tr>
+</table>
+
+<div>
+<br>
+<input type="button"  value="Shopping Nova América" onclick="carregaLoja(shoppingNovaAmerica);"> <br><br>
+<input type="button"  value="Shopping Tijuca" onclick="carregaLoja(shoppingTijuca);"> <br> <br>
+<input type="button"  value="Shopping Bangu" onclick="carregaLoja(shoppingBangu);"> <br><br>
+<input type="button"  value="Caxias Shopping" onclick="carregaLoja(caxiasShopping);"> <br><br>
+<input type="button"  value="Botafogo Praia Shopping" onclick="carregaLoja(botafogoPraiaShopping);"> <br> <br>
+<input type="button"  value="West Shopping" onclick="carregaLoja(westShopping);">
+</div>
+
+<html>
+
+<head>
+  <title> Onde Estamos </title>
+</head>
+
+<body>
+
+<p> Nossas lojas aceitam as seguintes formas de pagamento:
+VISA CREDITO / VISA ELETRON / MASTERCARD / REDESHOP / AMEX / SODEXO / VISA VALE
+ALELO / ELO / TICKET RESTAURANTE / DINHEIRO </p>
+
+</body>
+
+</html>
